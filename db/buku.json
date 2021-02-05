@@ -1,0 +1,19 @@
+[{
+    "ïd_buku": 1,
+    "nama": "Learn Javascript",
+    "pengarang": "Helmi",
+    "penerbit": "Gramedia"
+    
+},{
+    "ïd_buku": 2,
+    "nama": "Learn Node JS",
+    "pengarang": "Prayogo",
+    "penerbit": "Gramedia"
+    
+},{
+    "ïd_buku": 3,
+    "nama": "Learn Database",
+    "pengarang": "Dimas",
+    "penerbit": "Gramedia"
+    
+}]

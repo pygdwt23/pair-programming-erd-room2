@@ -1,0 +1,36 @@
+[{
+    "ïd_peminjaman": 1,
+    "id_mahasiswa": 2,
+    "id_buku": 1,
+    "tanggal_pinjam": "12-02-2018",
+    "tanggal_kembali": "12-03-2018"
+    
+},{
+    "ïd_peminjaman": 2,
+    "id_mahasiswa": 3,
+    "id_buku": 1,
+    "tanggal_pinjam": "16-04-2019",
+    "tanggal_kembali": "16-05-2019"
+    
+},{
+    "ïd_peminjaman": 3,
+    "id_mahasiswa": 1,
+    "id_buku": 2,
+    "tanggal_pinjam": "16-05-2019",
+    "tanggal_kembali": "16-06-2019"
+    
+},{
+    "ïd_peminjaman": 4,
+    "id_mahasiswa": 1,
+    "id_buku": 2,
+    "tanggal_pinjam": "16-06-2019",
+    "tanggal_kembali": "16-07-2019"
+    
+},{
+    "ïd_peminjaman": 5,
+    "id_mahasiswa": 3,
+    "id_buku": 3,
+    "tanggal_pinjam": "16-06-2019",
+    "tanggal_kembali": "16-08-2019"
+    
+}]
