@@ -3,6 +3,11 @@ const express = require("express");
 const bodyParser = require('body-parser');
 
 const app = express();
+let mahasiswa = require("./db/mahasiswa.json");
+const anggota = require("./route/mahasiswa");
+
+//Mahasiswa
+app.use(anggota);
 
 const routeBuku = require('./route/buku');
 
