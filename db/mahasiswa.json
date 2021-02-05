@@ -1,16 +1,16 @@
 [
   {
-    "id_mhs": 202101,
+    "id_mahasiswa": 1,
     "nim_anggota": 20210001,
     "nama_anggota": "Alpha is online"
   },
   {
-    "id_mhs": 202102,
+    "id_mahasiswa": 2,
     "nim_anggota": 20210002,
     "nama_anggota": "Beta Karantina"
   },
   {
-    "id_mhs": 202103,
+    "id_mahasiswa": 3,
     "nim_anggota": 20210003,
     "nama_anggota": "Charlie Chaplin"
   }
