@@ -11,7 +11,9 @@ route.get("/api/v1/mahasiswa", (req, res) => {
 });
 
 route.get("/api/v1/mahasiswa/:id", (req, res) => {
-  const mhs = mahasiswa.find((i) => i.id_mhs === +req.params.id_mhs);
+  const mhs = mahasiswa.find(
+    (i) => i.id_mahasiswa === +req.params.id_mahasiswa
+  );
   res.status(200).json(mhs);
 });
 
@@ -19,9 +21,9 @@ route.get("/api/v1/mahasiswa/:id", (req, res) => {
 route.post("/api/v1/mahasiswa", (req, res) => {
   const { nim_anggota, nama_anggota } = req.body;
 
-  const id_mhs = mahasiswa[mahasiswa.length - 1].id_mhs + 1;
+  const id_mahasiswa = mahasiswa[mahasiswa.length - 1].id_mahasiswa + 1;
   const mhs = {
-    id_mhs,
+    id_mahasiswa,
     nim_anggota,
     nama_anggota,
   };
@@ -31,13 +33,15 @@ route.post("/api/v1/mahasiswa", (req, res) => {
 
 //PUT
 route.put("/api/v1/mahasiswa/:id", (req, res) => {
-  let mhs = mahasiswa.find((i) => i.id_mhs === +req.params.id_mhs);
+  let mhs = mahasiswa.find((i) => i.id_mahasiswa === +req.params.id_mahasiswa);
   const params = {
     nim_anggota: req.body.nim_anggota,
     nama_anggota: req.body.nama_anggota,
   };
   mhs = { ...mhs, ...params };
-  mahasiswa = mahasiswa.map((i) => (i.id_mhs === mhs.id_mhs ? mhs : i));
+  mahasiswa = mahasiswa.map((i) =>
+    i.id_mahasiswa === mhs.id_mahasiswa ? mhs : i
+  );
   res.status(200).json({
     message: `Mahasiswa dengan id ${req.params.id} berhasil di update`,
   });
